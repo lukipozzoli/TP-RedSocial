@@ -7,45 +7,22 @@ RedSocial::RedSocial(){
 
 const set<int> & RedSocial::usuarios() const{ //Prototipada
     // O(1)
-    return _usuarios;
+    return _id;
 }
 
 string RedSocial::obtener_alias(int id) const{ //Prototipada
     // O(log n)
-    string res;
-    if(_primero == nullptr){
-        return;
+    auto busqueda = _usuarios.find(id);
+    if(busqueda != _usuarios.end()){
+        return busqueda->second;
+    } else {
+        return "No encontrado";
     }
-    node *current = _primero;
-    while(current != nullptr){
-        if(current->id == id){
-            return current->alias;
-        } else if (id < current->id){
-            current = current->izquierdo;
-        } else {
-            current = current->derecho;
-        }
-    }
-    return res;
 }
 
 const set<string> & RedSocial::obtener_amigos(int id) const{ //Prototipada
     //O(log n)
-    set<string> res;
-    if(_primero == nullptr){
-        return res;
-    }
-    node *current = _primero;
-    while(current != nullptr){
-        if(current->id == id){
-            res = current->amigos;
-            return res;
-        } else if(current->id > id){
-            current = current->izquierdo;
-        } else {
-            current = current->derecho;
-        }
-    }
+
 }
 
 const set<string> & RedSocial::obtener_conocidos(int id) const{
