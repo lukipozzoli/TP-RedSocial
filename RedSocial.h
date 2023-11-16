@@ -29,14 +29,17 @@ class RedSocial{
   struct node {
     int id;
     string alias;
+    set<string> amigos;
     node* izquierdo;
     node* derecho;
   };
 
+  set<int> _usuarios;
   set<int,int> _amistades;
   int _cantidad_amistades;
   set<string> _conocidos_mas_popular;
-
+  node* _primero;
+  
     /* completar... */
 };
 
