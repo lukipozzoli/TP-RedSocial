@@ -47,6 +47,8 @@ void RedSocial::registrar_usuario(string alias, int id){ //A medias
     _usuarios.insert(id,alias);
     _id.insert(id);
     _aliases.insert(alias,id);
+    _amigos.insert(id,null);
+    _amistades.insert(id,null);
     //Faltan las amistades y movidas
 }
 
@@ -58,11 +60,14 @@ void RedSocial::eliminar_usuario(int id){ //Prototipada
     _aliases.erase(alias_eliminar);
 
     auto amigos =  _amigos.find(id);
+    amigos = amigos->second;
+    string alias_eliminar = obtener_alias(id);
     for(auto it : _amigos){ //Lo borro a id como amigo de todos sus amigos
-        it.second.erase(id);
+        it.second.erase(alias_eliminar);
     }
 
     amigos = _amistades.find(id);
+    amigos = amigos->second;
     for(auto it : _amistades){ //Lo borro como amigo de sus amigos
         it.second.erase(id);
     }
@@ -76,16 +81,31 @@ void RedSocial::amigar_usuarios(int id_A, int id_B){ //Prototipada
     auto amistadesA = _amistades.find(id_A);
     amistadesA->second.insert(id_B); //Meto B como amigo de A
     auto amigosA = _amigos.find(id_A);
-    amistadesA->second.insert(id_B); //Meto B como amigo de A
+    string aliasB = obtener_alias(id_B);
+    amistadesA->second.insert(aliasB); //Meto B como amigo de A
 
     auto amistadesB = _amistades.find(id_B);
     amistadesB->second.insert(id_A); //Meto A como amigo de B
     auto amigosB = _amigos.find(id_B);
-    amistadesB->second.insert(id_A); //Meto A como amigo de B
+    string aliasA = obtener_alias(id_A);
+    amistadesB->second.insert(alias_A); //Meto A como amigo de B
 }
 
 void RedSocial::desamigar_usuarios(int id_A, int id_B){
     //Sin requerimiento
+    auto amigosA = _amigos.find(id_A);
+    string aliasB = obtener_alias(id_B);
+    amigosA->second.erase(aliasB); //Borro B de _amigos de A
+
+    auto amigosB = _amigos.find(id_B);
+    string aliasA = obtener_alias(id_A);
+    amigosB->second.erase(aliasA); //Borro A de _amigos de B
+
+    amigosA = _amistades.find(id_A);
+    amigosA->second.erase(id_B); //Borro B de _amistades de A
+
+    amigosB = _amistades.find(id_B);
+    amigosB->second.erase(id_A); //Borro A de _amistades de B
 
 }
 
