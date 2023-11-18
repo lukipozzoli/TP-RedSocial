@@ -44,11 +44,12 @@ int RedSocial::cantidad_amistades() const{ //Prototipada
 
 void RedSocial::registrar_usuario(string alias, int id){ //A medias
     //O(log n) + O(1) promedio
-    _usuarios.insert(id,alias);
+    //_usuarios.insert(id,alias);
+    _usuarios[id] = alias;
     _id.insert(id);
-    _aliases.insert(alias,id);
-    _amigos.insert(id,null);
-    _amistades.insert(id,null);
+    _aliases[alias] = id;
+    _amigos[id] = {};
+    _amistades[id] = {};
     //Faltan las amistades y movidas
 }
 
@@ -62,7 +63,7 @@ void RedSocial::eliminar_usuario(int id){ //Prototipada
     auto amigos =  _amigos.find(id);
     amigos = amigos->second;
     string alias_eliminar = obtener_alias(id);
-    for(auto it : _amigos){ //Lo borro a id como amigo de todos sus amigos
+    for(auto it : amigos){ //Lo borro a id como amigo de todos sus amigos
         it.second.erase(alias_eliminar);
     }
 
@@ -78,22 +79,16 @@ void RedSocial::eliminar_usuario(int id){ //Prototipada
 
 void RedSocial::amigar_usuarios(int id_A, int id_B){ //Prototipada
     //Sin requerimiento
-    auto amistadesA = _amistades.find(id_A);
-    amistadesA->second.insert(id_B); //Meto B como amigo de A
-    auto amigosA = _amigos.find(id_A);
-    string aliasB = obtener_alias(id_B);
-    amistadesA->second.insert(aliasB); //Meto B como amigo de A
+    _amistades[id_A].insert(id_B);
+    _amigos[id_A].insert(obtener_alias(id_B));
 
-    auto amistadesB = _amistades.find(id_B);
-    amistadesB->second.insert(id_A); //Meto A como amigo de B
-    auto amigosB = _amigos.find(id_B);
-    string aliasA = obtener_alias(id_A);
-    amistadesB->second.insert(alias_A); //Meto A como amigo de B
+    _amistades[id_B].insert(id_A);
+    _amigos[id_B].insert(obtener_alias(id_A));
 }
 
-void RedSocial::desamigar_usuarios(int id_A, int id_B){
+void RedSocial::desamigar_usuarios(int id_A, int id_B){//Prototipada
     //Sin requerimiento
-    auto amigosA = _amigos.find(id_A);
+   /* auto amigosA = _amigos.find(id_A);
     string aliasB = obtener_alias(id_B);
     amigosA->second.erase(aliasB); //Borro B de _amigos de A
 
@@ -106,12 +101,18 @@ void RedSocial::desamigar_usuarios(int id_A, int id_B){
 
     amigosB = _amistades.find(id_B);
     amigosB->second.erase(id_A); //Borro A de _amistades de B
+*/
+    _amistades[id_A].erase(id_B);
+    _amigos[id_A].erase(obtener_alias(id_B));
 
+    _amistades[id_B].erase(id_A);
+    _amigos[id_B].erase(obtener_alias(id_A));
+    
 }
 
 int RedSocial::obtener_id(string alias) const{ //Prototipada
     //O(1) promedio
-    return _aliases(id);
+    return;
 }
 
 const set<string> & RedSocial::conocidos_del_usuario_mas_popular() const{
