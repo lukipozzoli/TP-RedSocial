@@ -25,6 +25,9 @@ class RedSocial{
     int obtener_id(string alias) const; // O(1) promedio
     const set<string> & conocidos_del_usuario_mas_popular() const; // O(1)
 
+    //Propia
+    void identificar_popular();
+
   private:
 
   map<int, string> _usuarios;
@@ -32,23 +35,9 @@ class RedSocial{
   set<int> _id;
   map<int,set<string>> _amigos;
   unordered_map<string,int> _aliases;
-
-  /*
-  struct node {
-    int id;
-    string alias;
-    set<string> amigos;
-    node* izquierdo;
-    node* derecho;
-  };
-
-  set<int> _usuarios;
-  set<int,int> _amistades;
   int _cantidad_amistades;
-  set<string> _conocidos_mas_popular;
-  node* _primero;
-  */
-    /* completar... */
+  int _id_popular;
+  set<string> _conocidos_facha;
 };
 
 #endif

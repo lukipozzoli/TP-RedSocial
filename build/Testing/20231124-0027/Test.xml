@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++"
+	BuildStamp="20231124-0027-Experimental"
+	Name="745dc353ecfd"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="11.3.0"
+	OSName="Linux"
+	Hostname="ce225a32725e"
+	OSRelease="5.15.49-linuxkit-pr"
+	OSVersion="#1 SMP Thu May 25 07:17:40 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="6144"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="1023"
+	TotalPhysicalMemory="3933"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="1392.01"
+	>
+	<Testing>
+		<StartDateTime>Nov 24 23:23 UTC</StartDateTime>
+		<StartTestTime>1700868232</StartTestTime>
+		<TestList>
+			<Test>./RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia</Name>
+			<Path>.</Path>
+			<FullName>./RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia</FullName>
+			<FullCommandLine>/workspaces/TP\ RedSocial/build/red_social_tests "--gtest_filter=RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0386485</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/TP\ RedSocial/build/red_social_tests "--gtest_filter=RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJylUMtqwzAQvOsr9hgfbLXXQg6FlhwKabDTkzFCljdGVNIaPZLfrx8hTQqFQOa0ywyzO1Mm57TrwUrtVhkcPFngJ/LfYZAKA9/voMSuIqWl4W3SpuOiwyHwnqg3GDHEPHh1tfJ5nSYxmRZKsS1FfIHNLIH9yMBBm4ge1r/mBRpttZNepJCk1ySO6IUiN7IdBTHQkMzIOhJK2lZLVq8vaKA853iGOPtPOc5zSDpiwer8ggY2hlppFh7dUXtyFt2oxZin4Y/42vPyL6uh/NrCjOahGIsHfH485AOrJ7Ahu+PzRQmRojQZu6+XiNLnHZ3cbev/tQ1euuL2zhhz91pV729TXYu2YD/o6NcZ====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Nov 24 23:23 UTC</EndDateTime>
+		<EndTestTime>1700868232</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

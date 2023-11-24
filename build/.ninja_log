@@ -1,0 +1,23 @@
+# ninja log v5
+8	7383	1700491748912941297	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	7d3a22c0d99b8b44
+2413	3250	1700785640211671332	lib/libgmockd.a	645ee92a037ad539
+2120	3607	1700868215510604568	red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+7	9270	1700491750797486412	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	ac54c3b367790044
+26	6057	1700864498107957095	CMakeFiles/red_social_tests.dir/red_social_tests.cpp.o	b30cedcc1770326e
+154	3912	1700509732399363160	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	fc6d08c02f12a539
+21	1842	1700868213740375170	CMakeFiles/red_social.dir/RedSocial.cpp.o	69668cd6da5ad73a
+2120	3607	1700868215510604568	red_social_tests	e6e0ba78b183b9bf
+2413	2548	1700785639513284174	lib/libgtest_maind.a	4947431c6251f349
+3250	3381	1700785640345167192	lib/libgmock_maind.a	cef5996ac4d2f57d
+153	9583	1700509738066871497	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	7e061f793404dfa6
+1844	2484	1700868214383570119	red_social	d06466a57603c09
+25	2371	1700864494422757199	CMakeFiles/red_social.dir/red_social_main.cpp.o	8c6eab119c3bb334
+21	2119	1700868214016925634	CMakeFiles/red_social_tests.dir/RedSocial.cpp.o	586416037c2f05f1
+2120	3607	1700868215510604568	/workspaces/TP RedSocial/build/red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+45	2412	1700785639372506700	lib/libgtestd.a	845569bf6cd4451f
+130	9167	1700868718388496810	CMakeFiles/red_social.dir/RedSocial.cpp.o	69668cd6da5ad73a
+132	10046	1700868719227119663	CMakeFiles/red_social_tests.dir/RedSocial.cpp.o	586416037c2f05f1
+9225	15223	1700868724448130651	red_social	d06466a57603c09
+10135	30145	1700868739381683209	red_social_tests	e6e0ba78b183b9bf
+10135	30145	1700868739381683209	red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+10135	30145	1700868739381683209	/workspaces/TP RedSocial/build/red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
