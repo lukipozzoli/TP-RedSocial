@@ -1,10 +1,10 @@
-Start testing: Nov 24 23:23 UTC
+Start testing: Nov 24 23:51 UTC
 ----------------------------------------------------------
 17/17 Testing: RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia
 17/17 Test: RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia
 Command: "/workspaces/TP RedSocial/build/red_social_tests" "--gtest_filter=RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" "--gtest_also_run_disabled_tests"
 Directory: /workspaces/TP RedSocial/build
-"RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" start time: Nov 24 23:23 UTC
+"RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" start time: Nov 24 23:51 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /workspaces/TP RedSocial/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -13,18 +13,18 @@ Note: Google Test filter = RedSocial.eliminar_usuario_ver_conocidos_popular_no_c
 [----------] Global test environment set-up.
 [----------] 1 test from RedSocial
 [ RUN      ] RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia
-[       OK ] RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia (0 ms)
-[----------] 1 test from RedSocial (0 ms total)
+[       OK ] RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia (1 ms)
+[----------] 1 test from RedSocial (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
+[==========] 1 test from 1 test suite ran. (1 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.04 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" end time: Nov 24 23:23 UTC
+"RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" end time: Nov 24 23:51 UTC
 "RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 24 23:23 UTC
+End testing: Nov 24 23:51 UTC

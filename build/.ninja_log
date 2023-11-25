@@ -21,3 +21,17 @@
 10135	30145	1700868739381683209	red_social_tests	e6e0ba78b183b9bf
 10135	30145	1700868739381683209	red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
 10135	30145	1700868739381683209	/workspaces/TP RedSocial/build/red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+40	3288	1700869856135009134	CMakeFiles/red_social.dir/red_social_main.cpp.o	8c6eab119c3bb334
+41	6770	1700869859604611204	CMakeFiles/red_social.dir/RedSocial.cpp.o	69668cd6da5ad73a
+44	7295	1700869860138775319	CMakeFiles/red_social_tests.dir/RedSocial.cpp.o	586416037c2f05f1
+6772	8691	1700869861507549837	red_social	d06466a57603c09
+43	11516	1700869864358878327	CMakeFiles/red_social_tests.dir/red_social_tests.cpp.o	b30cedcc1770326e
+11518	14518	1700869867366258272	red_social_tests	e6e0ba78b183b9bf
+11518	14518	1700869867366258272	red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+11518	14518	1700869867366258272	/workspaces/TP RedSocial/build/red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+34	3753	1700871318068831057	CMakeFiles/red_social_tests.dir/RedSocial.cpp.o	586416037c2f05f1
+31	3832	1700871318147856844	CMakeFiles/red_social.dir/RedSocial.cpp.o	69668cd6da5ad73a
+3834	4544	1700871318865371278	red_social	d06466a57603c09
+3775	6544	1700871320866814896	red_social_tests	e6e0ba78b183b9bf
+3775	6544	1700871320866814896	red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf
+3775	6544	1700871320866814896	/workspaces/TP RedSocial/build/red_social_tests[1]_tests.cmake	e6e0ba78b183b9bf

@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="1392.01"
 	>
 	<Testing>
-		<StartDateTime>Nov 24 23:23 UTC</StartDateTime>
-		<StartTestTime>1700868232</StartTestTime>
+		<StartDateTime>Nov 24 23:51 UTC</StartDateTime>
+		<StartTestTime>1700869872</StartTestTime>
 		<TestList>
 			<Test>./RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>/workspaces/TP\ RedSocial/build/red_social_tests "--gtest_filter=RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" "--gtest_also_run_disabled_tests"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0386485</Value>
+					<Value>0.0208528</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJylUMtqwzAQvOsr9hgfbLXXQg6FlhwKabDTkzFCljdGVNIaPZLfrx8hTQqFQOa0ywyzO1Mm57TrwUrtVhkcPFngJ/LfYZAKA9/voMSuIqWl4W3SpuOiwyHwnqg3GDHEPHh1tfJ5nSYxmRZKsS1FfIHNLIH9yMBBm4ge1r/mBRpttZNepJCk1ySO6IUiN7IdBTHQkMzIOhJK2lZLVq8vaKA853iGOPtPOc5zSDpiwer8ggY2hlppFh7dUXtyFt2oxZin4Y/42vPyL6uh/NrCjOahGIsHfH485AOrJ7Ahu+PzRQmRojQZu6+XiNLnHZ3cbev/tQ1euuL2zhhz91pV729TXYu2YD/o6NcZ====</Value>
+					<Value encoding="base64" compression="gzip">eJylUMtqwzAQvOsr9hgfbJFrIYdCSw6FNNjpyRghyxsjKmmNHsnv14+QJoVCIHPaZYbZnSmTc9r1YKV2qwyOnizwM/nvMEiFgR/2UGJXkdLS8DZp03HR4RB4T9QbjBhiHry6Wfm8TpOYTAul2I4ivsB2lsBhZOCoTUQPm1/zAo222kkvUkjSaxIn9EKRG9mOghhoSGZkHQklbaslqzdXNFBecqwhzv5Tjsscko5YsDq/ooGtoVaahUd30p6cRTdqMeZp+CO+9bz+y2oov3Ywo3kqxuIBnx9P+cBqDTZkD3y+KCFSlCZjj/USUfq8o7O7b/2/tsFLV9zfGWPuX6vq/W2qa9EW7AfqRdcc====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Nov 24 23:23 UTC</EndDateTime>
-		<EndTestTime>1700868232</EndTestTime>
+		<EndDateTime>Nov 24 23:51 UTC</EndDateTime>
+		<EndTestTime>1700869872</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

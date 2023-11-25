@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-RedSocial::RedSocial(){
+RedSocial::RedSocial(){ //Cumple
     _cantidad_amistades = 0;
     _id_popular;
     _conocidos_facha = {};
@@ -13,7 +13,7 @@ const set<int> & RedSocial::usuarios() const{ //Cumple
     return _id;
 }
 
-string RedSocial::obtener_alias(int id) const{ //Prototipada Luki
+string RedSocial::obtener_alias(int id) const{ //Find, cumple
     // O(log n)
     auto busqueda = _usuarios.find(id);
     if(busqueda != _usuarios.end()){
@@ -23,7 +23,7 @@ string RedSocial::obtener_alias(int id) const{ //Prototipada Luki
     }
 }
 
-const set<string> & RedSocial::obtener_amigos(int id) const {
+const set<string> & RedSocial::obtener_amigos(int id) const {//Find, cumple
     //O(log n)
     auto busqueda = _amigos.find(id);
     static set<string> resultado;
@@ -34,7 +34,7 @@ const set<string> & RedSocial::obtener_amigos(int id) const {
     return resultado;
 }
 
-const set<string>& RedSocial::obtener_conocidos(int id) const {
+const set<string>& RedSocial::obtener_conocidos(int id) const { //O(m*logn) No cumple
     set<string> amigos_usuario;
     amigos_usuario = obtener_amigos(id);
     
@@ -58,13 +58,13 @@ const set<string>& RedSocial::obtener_conocidos(int id) const {
     }
 }
 
-int RedSocial::cantidad_amistades() const{ //Prototipada Luki
+int RedSocial::cantidad_amistades() const{ //Cumple
     //O(1)
     return _cantidad_amistades;
 }
 
-void RedSocial::registrar_usuario(string alias, int id){//Luki
-    //O(log n) + O(1) promedio
+void RedSocial::registrar_usuario(string alias, int id){//Cumple
+
     if(_usuarios.size() == 0){
         _id_popular = id;
     }
@@ -73,7 +73,7 @@ void RedSocial::registrar_usuario(string alias, int id){//Luki
     _aliases.insert(make_pair(alias,id));
 }
 
-void RedSocial::eliminar_usuario(int id){ //Prototipada Luki
+void RedSocial::eliminar_usuario(int id){ 
     //Sin requerimiento
 
     int amigos_usuario;
@@ -106,7 +106,7 @@ void RedSocial::eliminar_usuario(int id){ //Prototipada Luki
 
 }
 
-void RedSocial::amigar_usuarios(int id_A, int id_B){ //Prototipada Luki
+void RedSocial::amigar_usuarios(int id_A, int id_B){ 
     //Sin requerimiento
     _amistades[id_A].insert(id_B);
     _amigos[id_A].insert(obtener_alias(id_B));
@@ -119,7 +119,7 @@ void RedSocial::amigar_usuarios(int id_A, int id_B){ //Prototipada Luki
     identificar_popular();
 }
 
-void RedSocial::desamigar_usuarios(int id_A, int id_B){//Prototipada Luki
+void RedSocial::desamigar_usuarios(int id_A, int id_B){
     //Sin requerimiento
    /* auto amigosA = _amigos.find(id_A);
     string aliasB = obtener_alias(id_B);
@@ -147,19 +147,19 @@ void RedSocial::desamigar_usuarios(int id_A, int id_B){//Prototipada Luki
     
 }
 
-int RedSocial::obtener_id(string alias) const{ //Luki NO CUMPLE ORDEN
+int RedSocial::obtener_id(string alias) const{ //Cumple
     //O(1) promedio
     auto usuario = _aliases.find(alias);
     int res = usuario->second;
     return res;
 }
 
-const set<string> & RedSocial::conocidos_del_usuario_mas_popular() const{
+const set<string> & RedSocial::conocidos_del_usuario_mas_popular() const{ //Cumple
     //O(1)
-    return obtener_conocidos(_id_popular);
+    return _conocidos_facha;
 }
 
-void RedSocial::identificar_popular(){
+void RedSocial::identificar_popular(){ //Auxiliar
     int amistades_popular = _amistades[_id_popular].size();
     for(auto& it: _amistades){
         if(_id_popular != it.first){
@@ -168,4 +168,5 @@ void RedSocial::identificar_popular(){
             }
         }
     }
+    _conocidos_facha = obtener_conocidos(_id_popular);
 }
