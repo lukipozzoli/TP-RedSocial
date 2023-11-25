@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="1392.01"
 	>
 	<Testing>
-		<StartDateTime>Nov 25 00:15 UTC</StartDateTime>
-		<StartTestTime>1700871351</StartTestTime>
+		<StartDateTime>Nov 25 00:50 UTC</StartDateTime>
+		<StartTestTime>1700873435</StartTestTime>
 		<TestList>
 			<Test>./RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>/workspaces/TP\ RedSocial/build/red_social_tests "--gtest_filter=RedSocial.eliminar_usuario_ver_conocidos_popular_no_cambia" "--gtest_also_run_disabled_tests"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0191125</Value>
+					<Value>0.0159706</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJylUMtqwzAQvOsr9hgfbJFrIYdCSw6FNNjpyRghyxsjKmmNHsnv14+QJoVCIHPaZYbZnSmTc9r1YKV2qwyOnizwM/nvMEiFgR/2UGJXkdLS8DZp03HR4RB4T9QbjBhiHry6Wfm8TpOYTAul2I4ivsB2lsBhZOCoTUQPm1/zAo222kkvUkjSaxIn9EKRG9mOghhoSGZkHQklbaslqzdXNFBecqwhzv5Tjsscko5YsDq/ooGtoVaahUd30p6cRTdqMeZp+CO+9bz+y2oov3Ywo3kqxuIBnx9P+cBqDTZkD3y+KCFSlCZjj/USUfq8o7O7b/2/tsFLV9zfGWPuX6vq/W2qa9EW7AfqRdcc====</Value>
+					<Value encoding="base64" compression="gzip">eJylUMtqwzAQvOsr9mgfbDfXQg6FlhwKabDTkzFCkTdGVNIaPZLfrx/BdQuFQOa0ywyzO1NGa5XtwAhlkxTOjgwUV3JfvhcSfXE8QIltRVIJXZyi0m3BW+x90RF1GgP6kHknV2sxrePER9NcSrangM+wmyRwHBg4Kx3QwfbHPEetjLLC8eijcIr4BR2XZAe2Jc976qMeWEtcCnNSgtXbBQ2UtxwbCJP/mOM2+6gC5qzOFjSw03QSeubRXpQja9AOWgxZ7P+I157Lv6yG8nMPE5qHYswe8PH+kA8kT2B8esfnsxICBaFTdl8vAYXLWrra363/1zY4YXNINqs7Q8zDS1W9vY51zdqcfQPpCdca====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Nov 25 00:15 UTC</EndDateTime>
-		<EndTestTime>1700871351</EndTestTime>
+		<EndDateTime>Nov 25 00:50 UTC</EndDateTime>
+		<EndTestTime>1700873436</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

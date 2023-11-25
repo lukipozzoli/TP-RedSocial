@@ -121,20 +121,7 @@ void RedSocial::amigar_usuarios(int id_A, int id_B){
 
 void RedSocial::desamigar_usuarios(int id_A, int id_B){
     //Sin requerimiento
-   /* auto amigosA = _amigos.find(id_A);
-    string aliasB = obtener_alias(id_B);
-    amigosA->second.erase(aliasB); //Borro B de _amigos de A
-
-    auto amigosB = _amigos.find(id_B);
-    string aliasA = obtener_alias(id_A);
-    amigosB->second.erase(aliasA); //Borro A de _amigos de B
-
-    amigosA = _amistades.find(id_A);
-    amigosA->second.erase(id_B); //Borro B de _amistades de A
-
-    amigosB = _amistades.find(id_B);
-    amigosB->second.erase(id_A); //Borro A de _amistades de B
-*/
+  
     _amistades[id_A].erase(id_B);
     _amigos[id_A].erase(obtener_alias(id_B));
 
